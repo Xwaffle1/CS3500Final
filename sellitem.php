@@ -13,12 +13,19 @@
    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 
 
+   <script>
+       $(document).ready(function () {
+           $(".nav li").removeClass("active");
+           $('#sellitem').addClass('active');
+       });
+   </script>
+
 </head>
 <header>
    <?php include("navbar.html"); ?>
 </header>
 <body>
-<h1> Hello World </h1>
+<h1> Sell Item Page </h1>
 
 </body>
 </html>
