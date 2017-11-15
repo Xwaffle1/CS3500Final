@@ -22,7 +22,7 @@
 
 </head>
 <header>
-   <?php include("navbar.html"); ?>
+   <?php include("navbar-top.html"); ?>
 </header>
 <body>
 <h1> Sell Item Page </h1>

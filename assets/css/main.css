@@ -1,81 +1,36 @@
-/* general text formatting */
-
-h1, h2, h3, nav, footer {
- font-family: Georgia, Cambria, "Times New Roman", serif;
-}
-body {
-   font-family: "Lucida Sans", Verdana, Arial, sans-serif;
-   font-size: 100%;
-   
+.navbar-fixed-left {
+	width: 140px;
+	position: fixed;
+	border-radius: 0;
+	height: 100%;
 }
 
-caption{
-	background-color: #348e69;
-	text-align: center;
-	padding: 1em;
-}
-
-th {
-	height: .5em;
-	font-size: .65em;
-	border: outset 2px;
-}
-
-fieldset {
-    border: 1px solid #000;
-}
-
-td {
-	border: outset 2px;
-	width: 2em;
-	height: 2em;
-	text-align: center;
-}
-
-table {	
-	background-color: #e5e6e8;
-	margin-top: 3em;
-	margin-left: 40em;
-	margin-bottom: 2em;
-}
-
-.event{
-	text-decoration: underline;
-	color: #3da7bf;
-}
-
-#nextMonth{
-	text-decoration: underline;
-	font-size: 1em;
-	text-align: right;
-	width: 1.5em;
-	height: 1.5em;
-	border: none;
-}
-
-#currentDay{
-	background-color: #3da7bf;
+.navbar-fixed-left a{
 	color: white;
 }
 
-#prevMonth{
-	text-decoration: underline;
-	font-size: 1em;
-	text-align: left;
-	width: 1.5em;
-	height: 1.5em;
-	border: none;
+.navbar-fixed-left a:visited{
+	color: #959796;
 }
 
-#box{
-	background: tan;
-	margin-right: 55em;
-	margin-left: 35em;
-	padding: 1em;
-	
+.navbar-fixed-left a:hover{
+	color: #dddfde;
+	text-decoration: unset;
+
 }
 
-#insideBox{
-	margin: 1em;
-	border: solid 2px;
+.navbar-fixed-left .navbar-nav > li {
+	float: none;
+	width: 139px;
+}
+
+.navbar-fixed-left + .container {
+	padding-left: 160px;
+
+}
+
+.navbar-fixed-left .navbar-nav > li > .dropdown-menu {
+	margin-top: -50px;
+	margin-left: 140px;
+	background-color: #1d1e1f;
 }

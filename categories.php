@@ -17,7 +17,7 @@
 
 </head>
 <header>
-    <?php include("navbar.html"); ?>
+    <?php include("navbar-top.html"); ?>
     <script>
         $(document).ready(function () {
             $(".nav li").removeClass("active");
