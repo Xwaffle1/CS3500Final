@@ -25,9 +25,27 @@
     <?php include("navbar-top.php"); ?>
 <!--    --><?php //include("navbar-left.php"); ?>
 
+<style>
+.jumbotron{
+	background-color: MidnightBlue;
+	color: #fff;
+	padding: 100px 25px;
+	font-family: Montserrat, sans-serif;
+}
+h1{font-size: 8em;}
+</style>
+
 </header>
 <body>
-<h1> Main Page </h1>
+<div class="jumbotron text-center">
+	<h1>Company Name</h1>
+	<div class="input-group">
+		<input type="email" class="form-control" size="50" placeholder="Email Address" required>
+		<div class="input-group-btn">
+			<button type="button" class="btn btn-danger">Subscribe</button>
+		</div>
+	</div>
+</div>
 
 </body>
 
