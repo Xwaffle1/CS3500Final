@@ -26,32 +26,17 @@
     </script>
 </header>
 <body>
-<div class="container">
-    <div class="col-10 float-right">
-        <div class="col">
-            <div class="row">
-                <div class="col-80">
-                    <div class="col-60 float-left item-image-slot" style="background-color: blue; padding: 2em;">
-                        <h3 class="item-header">Lenovo Laptop</h3>
-                        <img class="item-image" src="assets/images/laptops/lenovo.jpg"/>
-                        <div class="col-7 float-right" style="background-color: #2b542c; padding: 2em;">
-                            <p style="word-wrap: break-word">Lenovo - 15.6" Laptop - AMD A6-Series
-                                -4GB Memory - 500GB Hard Drive - Black</p>
-                        </div>
 
-                    </div>
 
-                </div>
-            </div>
-            <div class="col-80 float-right" style="position: static;    ">
-                <p class="price">$279.99</p>
-                <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
-                            class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
-            </div>
+<h1> All Categories</h1>
+<div class="list-group">
+    <a href="#" class="list-group-item"><i class="fa fa-camera"></i>&nbsp; Cameras</a>
+    <a href="laptops.php" class="list-group-item"><i class="fa fa-laptop"></i>&nbsp; Computers</a>
+    <a href="#" class="list-group-item"><i class="fa fa-lg fa-mobile"></i>&nbsp; Phones</a>
+    <a href="#" class="list-group-item"><i class="fa fa-television"></i>&nbsp; TVs</a>
+    <a href="#" class="list-group-item"><i class="fa fa-gamepad"></i>&nbsp; Video Games</a>
 
-        </div>
-    </div>
-</div>
+
 </div>
 
 
