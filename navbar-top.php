@@ -2,7 +2,7 @@
       type="text/css">
 
 <header>
-
+<script src="assets/js/main.js"></script>
 </header>
 
 <nav class="navbar navbar-toggleable-md navbar-light navbar-inverse bg-inverse">
@@ -23,14 +23,27 @@
             <li class="nav-item" id="categories">
                 <a class="nav-link" href="categories.php">Categories</a>
             </li>
-            <li class="nav-item" id="sellitem">
-                <a class="nav-link" href="sellitem.php">Sell Item</a>
-            </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-primary text-white" type="submit"><span class="fa fa-search"></span></button>
         </form>
+        <?php
+        if (session_status() == PHP_SESSION_NONE) {
+            session_start();
+        }
+
+        if (isset($_SESSION['user']) && !empty(trim($_SESSION['user']))) {
+
+            ?>
+
+            <a class="btn navbar-btn ml-2 text-white btn-success" href="sellitem.php"><i
+                        class="fa d-inline fa-lg fa-plus"></i></a>
+
+
+            <?php
+        }
+        ?>
     </div>
 
     <?php
@@ -45,17 +58,24 @@
 
         <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
             <?php
-            echo "<span class='welcome-user'> Hello, " . $_SESSION['user'] . "</span>"
+            echo "<a class='welcome-user' onmouseover='' href='javascript:void(0)' onmouseenter='displayProfile(this)' onmouseleave='hideProfile(this)'>
+                    <p >" . $_SESSION['user'] . "</p>
+                    <p>
+                        <i class='fa d-inline fa-lg fa-usd' style='color: gold'></i> 10.52 
+                    </p>
+                    </a>                    
+                    ";
             ?>
-            <a class="btn navbar-btn ml-2 text-white btn-info" href="signout.php"> Sign Out</a>
+            <a class="btn navbar-btn ml-2 text-white btn-default sign-out" href="shoppingCart.php"> <i
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Cart</a>
+            <a class="btn navbar-btn ml-2 text-white btn-info sign-out" href="signout.php"> Sign Out</a>
         </div>
         <?php
     } else {
         ?>
 
         <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-            <a class="btn navbar-btn ml-2 text-white btn-default" href="shoppingCart.php"> <i
-                        class="fa d-inline fa-lg fa-shopping-cart"></i> Cart</a>
+
             <a class="btn navbar-btn ml-2 text-white btn-success" href="login.php"><i
                         class="fa d-inline fa-lg fa-user-circle-o"></i> Sign in</a>
             <a class="btn navbar-btn ml-2 text-white btn-success" href="register.php"><i

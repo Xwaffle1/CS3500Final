@@ -5,6 +5,9 @@
 	height: 100%;
 }
 
+body {
+	background-color: #cccecd;
+}
 .navbar-fixed-left a{
 	color: white;
 }
@@ -45,8 +48,24 @@
 
 }
 
+.sign-out{
+	margin: .5em;
+	padding: .5em;
+}
+
 .welcome-user{
-	color: #999;
-	margin-top: .5em;
-	margin-bottom: .5em;
+	color: white;
+	border: gray solid thin	;
+	padding: .25em 1em .25em 1em;
+	text-decoration: unset;
+}
+
+.welcome-user a:hover{
+	color: black;
+	text-decoration: unset;
+}
+
+.balance {
+	color: white;
+	text-decoration: unset;
 }

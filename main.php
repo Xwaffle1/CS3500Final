@@ -23,7 +23,7 @@
     }
     ?>
     <?php include("navbar-top.php"); ?>
-    <?php include("navbar-left.php"); ?>
+<!--    --><?php //include("navbar-left.php"); ?>
 
 </header>
 <body>
