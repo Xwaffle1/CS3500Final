@@ -26,28 +26,68 @@
     </script>
 </header>
 <div class="container">
-    <div class="col-10 float-right">
-        <div class="col">
-            <div class="row">
-                <div class="col-80">
-                    <div class="col-60 float-left item-image-slot" style="background-color: blue; padding: 2em;">
-                        <h3 class="item-header">Lenovo Laptop</h3>
-                        <img class="item-image" src="assets/images/laptops/lenovo.jpg"/>
-                        <div class="col-7 float-right" style="background-color: #2b542c; padding: 2em;">
-                            <p style="word-wrap: break-word">Lenovo - 15.6" Laptop - AMD A6-Series
-                                -4GB Memory - 500GB Hard Drive - Black</p>
-                        </div>
-
-                    </div>
+    <div class="col">
+        <div class="row float-left">
+            <div class="col-80">
+                <hr />
+                <div class="col-60 float-left item-image-slot">
+                    <h3 class="item-header">Lenovo Laptop</h3>
+                    <img class="item-image" src="assets/images/laptops/lenovo.jpg"/>
+                    <p style="word-wrap: break-word">Lenovo - 15.6" Laptop - AMD A6-Series
+                        -4GB Memory - 500GB Hard Drive - Black</p>
 
                 </div>
-            </div>
-            <div class="col-80 float-right" style="position: static;    ">
-                <p class="price">$279.99</p>
-                <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
-                        class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
-            </div>
 
+            </div>
+        </div>
+        <div class="col-80 float-right">
+            <hr />
+            <p class="price">$279.99</p>
+            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
         </div>
     </div>
+
+    <div class="col">
+        <div class="row float-left">
+            <div class="col-80">
+                <hr />
+                <div class="col-60 float-left item-image-slot">
+                    <h3 class="item-header">Dell Laptop</h3>
+                    <img class="item-image" src="assets/images/laptops/dell.jpg"/>
+                    <p style="word-wrap: break-word">Dell - Inspiron 15.6" Touch-Screen Laptop - Intel Core i5 - 8GB
+                        Memory - 2TB Hard Drive - Black</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-80 float-right">
+            <hr />
+            <p class="price">$529.99</p>
+            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
+        </div>
+    </div>
+    <div class="col">
+        <div class="row float-left">
+            <div class="col-80">
+                <hr />
+                <div class="col-60 float-left item-image-slot">
+                    <h3 class="item-header">HP Laptop</h3>
+                    <img class="item-image" src="assets/images/laptops/hp.jpg"/>
+                    <p style="word-wrap: break-word">ENVY x360 2-in-1 15.6" Touch-Screen Laptop - Intel Core i7 - 16GB
+                        Memory - 1TB Hard Drive - Natural Silver</p>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="col-80 float-right">
+            <hr />
+            <p class="price">$949.99</p>
+            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
+        </div>
+    </div>
+
 </div>

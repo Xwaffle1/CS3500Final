@@ -1,12 +1,17 @@
+
+h1 {
+    font-size: 8em;
+}
+
+body {
+    /*background-color: #cccecd;*/
+}
+
 .navbar-fixed-left {
     width: 140px;
     position: fixed;
     border-radius: 0;
     height: 100%;
-}
-
-body {
-    /*background-color: #cccecd;*/
 }
 
 .navbar-fixed-left a {
@@ -86,7 +91,9 @@ body {
 
 .item-header {
     text-align: left;
-    margin-left: 5em;
+    margin-left: 2em;
+    font-size: 1.5em;
+
 }
 
 .price {
@@ -94,4 +101,16 @@ body {
     margin: .5em;
     text-align: center;
     font-weight: bold;
+}
+
+.jumbotron {
+    background-color: #2a2c2d;
+    color: white;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+}
+
+.slide {
+    height: 15em;
+    width: 15em;
 }
