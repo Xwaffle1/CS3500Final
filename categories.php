@@ -26,7 +26,16 @@
     </script>
 </header>
 <body>
-<h1> Categories Page</h1>
+<h1> All Categories</h1>
+<div class="list-group">
+	<a href="#" class="list-group-item"><i class="fa fa-camera"></i>&nbsp; Cameras</a>
+	<a href="#" class="list-group-item"><i class="fa fa-laptop"></i>&nbsp; Computers</a>
+	<a href="#" class="list-group-item"><i class="fa fa-lg fa-mobile"></i>&nbsp; Phones</a>
+	<a href="#" class="list-group-item"><i class="fa fa-television"></i>&nbsp; TVs</a>
+	<a href="#" class="list-group-item"><i class="fa fa-gamepad"></i>&nbsp; Video Games</a>
+	
+	
+</div>
 
 </body>
 </html>
