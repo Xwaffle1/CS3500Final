@@ -2,7 +2,7 @@
       type="text/css">
 
 <header>
-<script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 </header>
 
 <nav class="navbar navbar-toggleable-md navbar-light navbar-inverse bg-inverse">
@@ -21,29 +21,13 @@
                 <a class="nav-link" href="index.php">Home </a>
             </li>
             <li class="nav-item" id="categories">
-                <a class="nav-link" href="categories.php">Categories</a>
+                <a class="nav-link" href="products.php">Products</a>
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0">
             <input class="form-control mr-sm-2" type="text" placeholder="Search">
             <button class="btn btn-primary text-white" type="submit"><span class="fa fa-search"></span></button>
         </form>
-        <?php
-        if (session_status() == PHP_SESSION_NONE) {
-            session_start();
-        }
-
-        if (isset($_SESSION['user']) && !empty(trim($_SESSION['user']))) {
-
-            ?>
-
-            <a class="btn navbar-btn ml-2 text-white btn-success" href="sellitem.php"><i
-                        class="fa d-inline fa-lg fa-plus"></i></a>
-
-
-            <?php
-        }
-        ?>
     </div>
 
     <?php

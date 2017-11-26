@@ -1,71 +1,97 @@
 .navbar-fixed-left {
-	width: 140px;
-	position: fixed;
-	border-radius: 0;
-	height: 100%;
+    width: 140px;
+    position: fixed;
+    border-radius: 0;
+    height: 100%;
 }
 
 body {
-	background-color: #cccecd;
-}
-.navbar-fixed-left a{
-	color: white;
+    /*background-color: #cccecd;*/
 }
 
-.navbar-fixed-left a:visited{
-	color: #959796;
+.navbar-fixed-left a {
+    color: white;
 }
 
-.navbar-fixed-left a:hover{
-	color: #dddfde;
-	text-decoration: unset;
+.navbar-fixed-left a:visited {
+    color: #959796;
+}
+
+.navbar-fixed-left a:hover {
+    color: #dddfde;
+    text-decoration: unset;
 
 }
 
 .navbar-fixed-left .navbar-nav > li {
-	float: none;
-	width: 139px;
+    float: none;
+    width: 139px;
 }
 
 .navbar-fixed-left + .container {
-	padding-left: 160px;
+    padding-left: 160px;
 
 }
 
 .navbar-fixed-left .navbar-nav > li > .dropdown-menu {
-	margin-top: -50px;
-	margin-left: 140px;
-	background-color: #1d1e1f;
+    margin-top: -50px;
+    margin-left: 140px;
+    background-color: #1d1e1f;
 }
 
 .sign-in-here {
-	border-bottom: 1px dashed #bbb;
-	color: #999;
-	display: inline-block;
-	font-size: 11px;
-	margin-left: 10px;
-	padding-bottom: 1px
+    border-bottom: 1px dashed #bbb;
+    color: #999;
+    display: inline-block;
+    font-size: 11px;
+    margin-left: 10px;
+    padding-bottom: 1px
 
 }
 
-.sign-out{
-	margin: .5em;
-	padding: .5em;
+.sign-out {
+    margin: .5em;
+    padding: .5em;
 }
 
-.welcome-user{
-	color: white;
-	border: gray solid thin	;
-	padding: .25em 1em .25em 1em;
-	text-decoration: unset;
+.welcome-user {
+    color: white;
+    border: gray solid thin;
+    padding: .25em 1em .25em 1em;
+    text-decoration: unset;
 }
 
-.welcome-user a:hover{
-	color: black;
-	text-decoration: unset;
+.welcome-user a:hover {
+    color: black;
+    text-decoration: unset;
 }
 
 .balance {
-	color: white;
-	text-decoration: unset;
+    color: white;
+    text-decoration: unset;
+}
+
+.item-image {
+    width: 30%;
+    height: 30%;
+    margin: 1em 2.5em 1em 2.5em;
+
+}
+
+.item-image-slot {
+    /*margin: 1em;*/
+    align-content: center;
+
+}
+
+.item-header {
+    text-align: left;
+    margin-left: 5em;
+}
+
+.price {
+    font-size: larger;
+    margin: .5em;
+    text-align: center;
+    font-weight: bold;
 }
