@@ -34,3 +34,19 @@
 	margin-left: 140px;
 	background-color: #1d1e1f;
 }
+
+.sign-in-here {
+	border-bottom: 1px dashed #bbb;
+	color: #999;
+	display: inline-block;
+	font-size: 11px;
+	margin-left: 10px;
+	padding-bottom: 1px
+
+}
+
+.welcome-user{
+	color: #999;
+	margin-top: .5em;
+	margin-bottom: .5em;
+}

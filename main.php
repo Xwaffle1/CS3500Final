@@ -17,8 +17,13 @@
 
 </head>
 <header>
-    <?php include("navbar-top.html"); ?>
-    <?php include("navbar-left.html"); ?>
+    <?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+    ?>
+    <?php include("navbar-top.php"); ?>
+    <?php include("navbar-left.php"); ?>
 
 </header>
 <body>

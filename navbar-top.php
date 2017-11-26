@@ -1,7 +1,13 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css">
 
+<header>
+
+</header>
+
 <nav class="navbar navbar-toggleable-md navbar-light navbar-inverse bg-inverse">
+
+
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
             data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -26,12 +32,36 @@
             <button class="btn btn-primary text-white" type="submit"><span class="fa fa-search"></span></button>
         </form>
     </div>
-    <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
-		<a class="btn navbar-btn ml-2 text-white btn-default" href="shoppingCart.php"> <i
-			class="fa d-inline fa-lg fa-shopping-cart"></i> Cart</a>	
-        <a class="btn navbar-btn ml-2 text-white btn-success" href="login.html"><i
-                class="fa d-inline fa-lg fa-user-circle-o"></i> Sign in</a>
-        <a class="btn navbar-btn ml-2 text-white btn-success" href="register.html"><i
-                class="fa d-inline fa-lg fa-child"></i>&nbsp;Register</a>
-    </div>
+
+    <?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+
+    if (isset($_SESSION['user']) && !empty(trim($_SESSION['user']))) {
+
+        ?>
+
+
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+            <?php
+            echo "<span class='welcome-user'> Hello, " . $_SESSION['user'] . "</span>"
+            ?>
+            <a class="btn navbar-btn ml-2 text-white btn-info" href="signout.php"> Sign Out</a>
+        </div>
+        <?php
+    } else {
+        ?>
+
+        <div class="collapse navbar-collapse text-center justify-content-end" id="navbar2SupportedContent">
+            <a class="btn navbar-btn ml-2 text-white btn-default" href="shoppingCart.php"> <i
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Cart</a>
+            <a class="btn navbar-btn ml-2 text-white btn-success" href="login.php"><i
+                        class="fa d-inline fa-lg fa-user-circle-o"></i> Sign in</a>
+            <a class="btn navbar-btn ml-2 text-white btn-success" href="register.php"><i
+                        class="fa d-inline fa-lg fa-child"></i>&nbsp;Register</a>
+        </div>
+
+    <?php } ?>
+
 </nav>
