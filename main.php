@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html>
-<head lang="en">
-    <meta charset="utf-8">
-    <title>CS3500 Final</title>
-    <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+<link lang="en">
+<meta charset="utf-8">
+<title>CS3500 Final</title>
+<link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"/>
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+<link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
 
-    <script>
-        $(document).ready(function () {
-            $(".nav li").removeClass("active");
-            $('#home').addClass('active');
-        });
-    </script>
 </head>
 <header>
     <?php
@@ -24,8 +18,6 @@
     ?>
     <?php include("navbar-top.php"); ?>
     <!--    --><?php //include("navbar-left.php"); ?>
-
-
 </header>
 <body>
 <div class="container">

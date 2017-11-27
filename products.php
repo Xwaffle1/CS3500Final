@@ -28,7 +28,7 @@
 <body>
 
 
-<h1> All Categories</h1>
+<h1 id="categoryHeader">All Categories</h1>
 <div class="list-group">
     <a href="#" class="list-group-item"><i class="fa fa-camera"></i>&nbsp; Cameras</a>
     <a href="laptops.php" class="list-group-item"><i class="fa fa-laptop"></i>&nbsp; Computers</a>

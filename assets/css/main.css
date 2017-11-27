@@ -1,10 +1,16 @@
 
-h1 {
+#categoryHeader {
     font-size: 8em;
 }
 
-body {
-    /*background-color: #cccecd;*/
+#shoppingCartHeader {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.moveRight {
+    text-align: right;
 }
 
 .navbar-fixed-left {
