@@ -51,6 +51,7 @@ define("SHIPPING_FLAT_AMOUNT", 0);
             <td>1</td>
             <td>450</td>
             <td>450</td>
+			<td><a class="btn btn-danger"  onclick="removeItem(this);">X</a></td>
         </tr>
 
 

@@ -1,3 +1,15 @@
+<?php
+    if (session_status() == PHP_SESSION_NONE) {
+        session_start();
+    }
+	if(isset($_SESSION['cartSize'])){
+		$cartItems = $_SESSION['cartSize'];
+	}else{
+		$cartItems = 1;
+	}
+?>
+
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
       type="text/css">
 
@@ -31,9 +43,7 @@
     </div>
 
     <?php
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
+
 
     if (isset($_SESSION['user']) && !empty(trim($_SESSION['user']))) {
 
@@ -51,7 +61,7 @@
                     ";
             ?>
             <a class="btn navbar-btn ml-2 text-white btn-default sign-out" href="shoppingCart.php"> <i
-                        class="fa d-inline fa-lg fa-shopping-cart"></i> Cart</a>
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Cart<?php  if($cartItems > 0) echo " ($cartItems)";?></a>
             <a class="btn navbar-btn ml-2 text-white btn-info sign-out" href="signout.php"> Sign Out</a>
         </div>
         <?php

@@ -3,11 +3,15 @@ function authenticate(){
 
 }
 
-
-function displayProfile(element) {
-
+function addToCart(element){
+	
+	element.classList.add("btn-success");
+	element.classList.remove("btn-warning");
+	
+	element.text = "Added";
+	
 }
 
-function hideProfile(element) {
-
+function removeItem(element){
+	element.parentNode.parentNode.remove();
 }

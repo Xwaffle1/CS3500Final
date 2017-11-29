@@ -23,7 +23,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <form class="" method="post">
+                <form class="" method="post" action="login.php">
                     <div class="form-group"><label>Username</label>
                         <input name="username" class="form-control" placeholder="Enter username"></div>
                     <div class="form-group"><label>Email address</label>

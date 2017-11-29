@@ -47,7 +47,7 @@
         <div class="col-80 float-right">
             <hr />
             <p class="price">$600.00</p>
-            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
+            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)" onclick="addToCart(this)"><i
                         class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
         </div>
     </div>
@@ -67,7 +67,7 @@
         <div class="col-80 float-right">
             <hr />
             <p class="price">$699.99</p>
-            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
+            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)" onclick="addToCart(this)"><i
                         class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
         </div>
     </div>
@@ -87,7 +87,7 @@
         <div class="col-80 float-right">
             <hr />
             <p class="price">$549.99</p>
-            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)"><i
+            <a class="btn navbar-btn ml-2 text-white btn-warning" href="javascript:void(0)" onclick="addToCart(this)"><i
                         class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
         </div>
     </div>
