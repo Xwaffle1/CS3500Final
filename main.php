@@ -20,47 +20,58 @@
     <!--    --><?php //include("navbar-left.php"); ?>
 </header>
 <body>
-<div class="container">
-    <div class="jumbotron text-center">
-        <h1>Company Name</h1>
-        <p style="margin: 1em">Subsribe to our news letter in order to hear about our great deals!</p>
-        <div class="input-group">
-            <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-            <div class="input-group-btn">
-                <button type="button" class="btn btn-danger">Subscribe</button>
+<div class="col-12">
+    <div class="container bg-inverse">
+        <div class="jumbotron-header text-center">
+            <h1>Company Name</h1>
+            <p style="margin: 1em">Subsribe to our news letter in order to hear about our great deals!</p>
+            <div class="input-group">
+                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <div class="input-group-btn">
+                    <button type="button" class="btn btn-danger">Subscribe</button>
+                </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="w3-content w3-display-container">
-    <div class="w3-display-container slide">
-        <img src="assets/images/laptops/lenovo.jpg" style="width:100%">
-        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-            $249.99
-        </div>
-    </div>
+<div class="col-2 float-left" style="margin: 2em 0em 0em 3em">
+    <div class="w3-content w3-display-container float-left">
+        <div class="w3-display-container slide">
+            <img src="assets/images/laptops/lenovo.jpg" style="width:100%">
+            <div class="w3-display-topright w3-large w3-container w3-padding-2 w3-black">
+                $249.99
+            </div>
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 
-    <div class="w3-display-container slide">
-        <img src="assets/images/laptops/dell.jpg" style="width:100%">
-        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-            $549.99
         </div>
-    </div>
 
-    <div class="w3-display-container slide">
-        <img src="assets/images/laptops/hp.jpg" style="width:100%">
-        <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
-            $949.99
+        <div class="w3-display-container slide">
+            <img src="assets/images/laptops/dell.jpg" style="width:100%">
+            <div class="w3-display-topright w3-large w3-container w3-padding-2 w3-black">
+                $549.99
+            </div>
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+        </div>
+
+        <div class="w3-display-container slide">
+            <img src="assets/images/laptops/hp.jpg" style="width:100%">
+            <div class="w3-display-topright w3-large w3-container w3-padding-2 w3-black">
+                $949.99
+            </div>
+            <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
         </div>
     </div>
-    <button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
-    <button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
 </div>
+
+<?php include("footer.php"); ?>
 
 
 </body>
-
 <!-- Bootstrap core JavaScript -->
 <!-- ================================================== -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

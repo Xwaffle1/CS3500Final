@@ -7,17 +7,21 @@
     <link rel="stylesheet" href="assets/css/reset.css"/>
     <link rel="stylesheet" href="assets/css/main.css"/>
 
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 
-    <script src="assets/bootstrap/js/bootstrap.min.js"/>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 </head>
 <header>
     <?php include("navbar-top.php"); ?>
-
+    <script>
+        $(document).ready(function () {
+            $(".nav li").removeClass("active");
+            $('#categories').addClass('active');
+        });
+    </script>
 </header>
 
 <?php
@@ -39,6 +43,14 @@ define("SHIPPING_FLAT_AMOUNT", 0);
             <th>Quantity</th>
             <th>Price</th>
             <th>Amount</th>
+        </tr>
+
+        <tr>
+            <td><img src="assets/images/laptops/lenovo.jpg" height="60" width="80"/></td>
+            <td>Lenovo Laptop</td>
+            <td>1</td>
+            <td>450</td>
+            <td>450</td>
         </tr>
 
 

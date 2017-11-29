@@ -16,5 +16,6 @@ if (isset($_POST["email"]) && isset($_POST["password"])) {
     $name = $_POST["email"];
 
     $_SESSION["user"] = $name;
-    include("main.php");
 }
+
+header("Location: main.php");

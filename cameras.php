@@ -25,6 +25,9 @@
         });
     </script>
 </header>
+<a class="btn navbar-btn text-white btn-info back-button" href="products.php"><i
+            class="fa fa-arrow-left"></i></a>
+
 <div class="container">
     <div class="col">
         <div class="row float-left">
