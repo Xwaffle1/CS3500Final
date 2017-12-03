@@ -1,22 +1,10 @@
 
-#categoryHeader {
-    font-size: 6em;
-    margin-bottom: 1em;
-}
-
 h2 {
     font-size: 5em;
 }
 
-
 h1 {
     font-size: 6em;
-}
-
-#shoppingCartHeader {
-    font-size: 3em;
-    font-weight: bold;
-    margin-top: 0;
 }
 
 .moveRight {
@@ -138,5 +126,17 @@ h1 {
 
 .add-to-cart {
 	
+}
+
+#categoryHeader {
+    font-size: 6em;
+    margin-bottom: 1em;
+}
+
+
+#shoppingCartHeader {
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 0;
 }
 
