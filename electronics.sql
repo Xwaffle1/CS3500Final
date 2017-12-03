@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.7.4
+-- version 4.7.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 03, 2017 at 07:50 AM
+-- Generation Time: Dec 03, 2017 at 11:53 PM
 -- Server version: 10.1.26-MariaDB
--- PHP Version: 7.1.9
+-- PHP Version: 7.1.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -74,7 +74,16 @@ INSERT INTO `products` (`ID`, `ItemName`, `ItemDesc`, `ItemPrice`, `ImagePath`, 
 (7, 'Samsung Galaxy S8\r\n', 'Samsung - Galaxy S8 64GB - AMOLED 5.8-inch screen - 12MP dual camera - Midnight Black\r\n', 576.99, 'assets/images/phones/galaxy.jpg', 2),
 (8, 'Sony TV', 'Sony - 50\" Class(49.5\" Diag.) - LED - 2160p - Smart - 4K Ultra HD TV\r\n', 599.99, 'assets/images/tvs/sony.jpg', 3),
 (9, 'LG TV\r\n', 'LG - 55\" Class (54.6\" Diag.) - LED - 2160p - Smart - 4K Ultra HD TV\r\n', 699.99, 'assets/images/tvs/LG.jpg', 3),
-(10, 'Samsung TV\r\n', 'Samsung - 40\" Class (39.9 Diag.) - LED - 2160p - Smart - 4k Ultra HD TV\r\n', 549.99, 'assets/images/tvs/samsung.jpg', 3);
+(10, 'Samsung TV\r\n', 'Samsung - 40\" Class (39.9 Diag.) - LED - 2160p - Smart - 4k Ultra HD TV\r\n', 549.99, 'assets/images/tvs/samsung.jpg', 3),
+(11, 'Xbox One X\r\n', 'Microsoft - Xbox One X 1TB Console - Black\r\n', 499.99, 'assets/images/games/xbox.jpg', 4),
+(12, 'PlayStation 4\r\n', 'Sony - PlayStation 4 1TB Console - Black\r\n', 299.99, 'assets/images/games/playstation.jpg', 4),
+(13, 'Nintendo Switch\r\n', 'Nintendo - Switch Console - Gray Joy-Con\r\n', 299.99, 'assets/images/games/switch.jpg', 4),
+(14, 'Call of Duty WWII - Xbox One\r\n', 'Call of Duty® returns to its roots with Call of Duty®: WWII', 59.99, 'assets/images/games/games/cod.jpg', 5),
+(15, 'Overwatch - Game of the Year Edition - PlayStation 4\r\n', 'Overwatch™ is a team-based shooter where heroes do battle in a world of conflict.\r\nWelcome to Overwatch™', 59.99, 'assets/images/games/games/overwatch.jpg', 5),
+(16, 'Star Wars Battlefront II - PlayStation 4\r\n', 'Journey to a galaxy far, far away in Star Wars Battlefront 2 for the PlayStation 4.', 59.99, 'assets/images/games/games/starwars.jpg', 5),
+(17, 'Xbox Elite Controller\r\n', 'Microsoft Xbox Elite Wireless Controller for Xbox One - Black', 149.99, 'assets/images/games/accessories/elite.jpg', 6),
+(18, 'PlayStation Controller\r\n', 'Sony DualShock 4 Wireless Controller for PlayStation 4 - Jet Black', 59.99, 'assets/images/games/accessories/ps-controller.jpg', 6),
+(19, 'Nintendo Switch Controller\r\n', 'Nintendo - Pro Wireless Controller for Nintendo Switch', 69.99, 'assets/images/games/accessories/switch.jpg', 6);
 
 --
 -- Indexes for dumped tables

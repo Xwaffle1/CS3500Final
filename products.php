@@ -4,8 +4,8 @@
     <meta charset="utf-8">
     <title>CS3500 Final</title>
     <link href="assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/reset.css"/>
-    <link rel="stylesheet" href="assets/css/main.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css"/>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -35,7 +35,14 @@
         <a href="display-product.php?category=1" class="list-group-item"><i class="fa fa-laptop"></i>&nbsp; Computers</a>
         <a href="display-product.php?category=2" class="list-group-item"><i class="fa fa-lg fa-mobile"></i>&nbsp; Phones</a>
         <a href="display-product.php?category=3" class="list-group-item"><i class="fa fa-television"></i>&nbsp; TVs</a>
-        <a href="display-product.php?category=4" class="list-group-item"><i class="fa fa-gamepad"></i>&nbsp; Video Games</a>
+		<div class="dropdown">
+			<a class="list-group-item" data-toggle="dropdown" href="#"><i class="fa fa-gamepad"></i>&nbsp; Video Games</a>
+			<ul class="dropdown-menu">
+				<li><a href="display-product.php?category=4">Consoles</a></li>
+				<li><a href="display-product.php?category=5">Games</a></li>
+				<li><a href="display-product.php?category=6">Accessories</a></li>
+			</ul>
+        <!--<a href="display-product.php?category=4" class="list-group-item"><i class="fa fa-gamepad"></i>&nbsp; Video Games</a>-->
     </div>
 </div>
 
