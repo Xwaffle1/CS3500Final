@@ -1,12 +1,12 @@
 <?php
-    if (session_status() == PHP_SESSION_NONE) {
-        session_start();
-    }
-	if(isset($_SESSION['cartSize'])){
-		$cartItems = $_SESSION['cartSize'];
-	}else{
-		$cartItems = 1;
-	}
+if (session_status() == PHP_SESSION_NONE) {
+    session_start();
+}
+if (isset($_SESSION['cart'])) {
+    $cartItems = sizeof($_SESSION['cart']);
+} else {
+    $cartItems = 0;
+}
 ?>
 
 
@@ -25,7 +25,7 @@
             aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
     </button>
-    <a class="navbar-brand" href="#">WebsiteName</a>
+    <a class="navbar-brand" href="#">EBuy</a>
 
     <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <ul class="navbar-nav mr-auto mt-2 mt-md-0">
@@ -61,7 +61,8 @@
                     ";
             ?>
             <a class="btn navbar-btn ml-2 text-white btn-default sign-out" href="shoppingCart.php"> <i
-                        class="fa d-inline fa-lg fa-shopping-cart"></i> Cart<?php  if($cartItems > 0) echo " ($cartItems)";?></a>
+                        class="fa d-inline fa-lg fa-shopping-cart"></i>
+                Cart<?php if ($cartItems > 0) echo " ($cartItems)"; ?></a>
             <a class="btn navbar-btn ml-2 text-white btn-info sign-out" href="signout.php"> Sign Out</a>
         </div>
         <?php

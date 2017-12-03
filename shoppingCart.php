@@ -33,6 +33,11 @@ define("SHIPPING_FLAT_AMOUNT", 0);
 <body>
 <div class="container">
 
+    <?php
+    include("database.php");
+    global $products;
+    ?>
+
     <div class="page-header">
         <h1 id="shoppingCartHeader">View Cart</h1>
     </div>
@@ -44,32 +49,46 @@ define("SHIPPING_FLAT_AMOUNT", 0);
             <th>Price</th>
             <th>Amount</th>
         </tr>
+        <?php
 
-        <tr>
-            <td><img src="assets/images/laptops/lenovo.jpg" height="60" width="80"/></td>
-            <td>Lenovo Laptop</td>
-            <td>1</td>
-            <td>450</td>
-            <td>450</td>
-			<td><a class="btn btn-danger"  onclick="removeItem(this);">X</a></td>
-        </tr>
+        $subTotal = 0;
+
+        if (isset($_SESSION["cart"])) {
+            foreach ($_SESSION["cart"] as $productID) {
+                $product = $products[$productID];
+                $subTotal += $product->price;
+                echo "<tr>";
+                echo "<td><img src=\"$product->imagePath\" height=\"60\" width=\"80\"/></td>";
+                echo "<td>$product->itemName</td>";
+                echo "<td>1</td>";
+                echo "<td>$product->price</td>";
+                echo "<td>$product->price</td>";
+                echo "<td><a class=\"btn btn-danger\" onclick=\"removeItem(this);\">X</a></td>";
+                echo "<tr>";
+            }
+        }
+
+        $tax = $subTotal * 0.06;
+        $shipping = 5;
+        $total = $subTotal + $tax + $shipping;
+        ?>
 
 
         <tr class="success strong">
             <td colspan="4" class="moveRight">Subtotal</td>
-            <td>$<?php echo number_format(0, 2) ?></td>
+            <td>$<?php echo number_format($subTotal, 2) ?></td>
         </tr>
         <tr class="active strong">
             <td colspan="4" class="moveRight">Tax</td>
-            <td>$<?php echo number_format(0, 2) ?></td>
+            <td>$<?php echo number_format($tax, 2) ?></td>
         </tr>
         <tr class="strong">
             <td colspan="4" class="moveRight">Shipping</td>
-            <td>$<?php echo number_format(0, 2) ?></td>
+            <td>$<?php echo number_format($shipping, 2) ?></td>
         </tr>
         <tr class="warning strong text-danger">
             <td colspan="4" class="moveRight">Total</td>
-            <td>$<?php echo number_format(0, 2) ?></td>
+            <td>$<?php echo number_format($total, 2) ?></td>
         </tr>
         <tr>
             <td colspan="4" class="moveRight"><a href="main.php" class="btn btn-primary" role="button">Continue

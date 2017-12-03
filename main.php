@@ -23,7 +23,7 @@
 <div class="col-12">
     <div class="container bg-inverse">
         <div class="jumbotron-header text-center">
-            <h1>Company Name</h1>
+            <h1><EBuy></EBuy></h1>
             <p style="margin: 1em">Subsribe to our news letter in order to hear about our great deals!</p>
             <div class="input-group">
                 <input type="email" class="form-control" size="50" placeholder="Email Address" required>
