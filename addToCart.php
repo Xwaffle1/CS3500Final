@@ -7,4 +7,12 @@
  */
 
 session_start();
-$_SESSION["cart"][] = $_GET["productID"];
+
+
+if(isset($_SESSION["user"])){
+    $_SESSION["cart"][] = $_GET["productID"];
+    header("Location: shoppingCart.php");
+}else{
+    header("Location: login.php");
+}
+

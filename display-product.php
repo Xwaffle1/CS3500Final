@@ -2,6 +2,19 @@
 
 include "database.php";
 
+
+function cartContains($id) {
+    if (!isset($_SESSION["cart"]))
+        return false;
+
+    foreach ($_SESSION["cart"] as $productID) {
+        if ($productID == $id)
+            return true;
+    }
+
+    return false;
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -35,11 +48,21 @@ include "database.php";
     <?php
     global $products;
 
-    $category = $_GET["category"];
+    $results = 0;
 
     foreach ($products as $product) {
-        if ($product->getCategoryID() == $category) {
-            echo '    
+        if (isset($_GET["category"])) {
+            $category = $_GET["category"];
+            if ($product->getCategoryID() != $category)
+                continue;
+        }
+
+        if (isset($_GET["search"]) && strlen($_GET["search"]) > 0) {
+            if (!(strpos(strtolower($product->itemName), strtolower($_GET["search"])) !== false))
+                continue;
+        }
+        $results++;
+        echo '    
     <div class="col">
         <div class="row float-left">
             <div class="col-80">
@@ -55,14 +78,28 @@ include "database.php";
         </div>
         <div class="col-80 float-right">
             <hr/>
-            <p class="price">' . $product->price . '</p>
-            <a class="btn navbar-btn ml-2 text-white btn-warning" href="addToCart.php?productID=' . $product->id . '" onclick="addToCart(this)"><i
-                        class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>
+            <p class="price">' . $product->price . '</p>';
+
+        if (cartContains($product->id)) {
+            echo '<a class="btn navbar-btn ml-2 text-white btn-success" href="addToCart.php?productID=' . $product->id . '" onclick="addToCart(this)">    <i
+                        class="fa d-inline fa-lg fa-check"></i> In Cart</a>';
+        } else {
+            echo '<a class="btn navbar-btn ml-2 text-white btn-warning" href="addToCart.php?productID=' . $product->id . '" onclick="addToCart(this)"><i
+                        class="fa d-inline fa-lg fa-shopping-cart"></i> Add To Cart</a>';
+        }
+        echo '
         </div>
     </div>
     ';
-        }
+
     }
+
+    if ($results === 0) {
+        echo "<h3 style='margin-top: 3em; font-size: 24px;'>No Results Found... for:  <strong>" . $_GET["search"] . "</strong></h3>";
+    } else {
+    }
+
+
     ?>
 
 
