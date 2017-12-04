@@ -20,21 +20,45 @@
     <!--    --><?php //include("navbar-left.php"); ?>
 </header>
 <body>
+
+<script>
+
+function subscribe(element,mail){
+	
+	var mailformat = /^\w([\.-]?\w+)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
+	
+	if(mail.value.match(mailformat))  { 
+	
+	element.classList.add("btn-success");
+	element.classList.remove("btn-danger");
+	element.innerHTML = "Subscribed";
+	document.form1.email.focus();
+	return true;  
+	}  
+	else  {  
+	alert("You have entered an invalid email address!");  
+	document.form1.email.focus();
+	return false;  
+	}
+}
+	
+</script>
+<form name="form1">
 <div class="col-12">
     <div class="container bg-inverse">
         <div class="jumbotron-header text-center">
             <h1><EBuy></EBuy></h1>
             <p style="margin: 1em">Subsribe to our news letter in order to hear about our great deals!</p>
             <div class="input-group">
-                <input type="email" class="form-control" size="50" placeholder="Email Address" required>
+                <input type="email" class="form-control" name="email" size="50" placeholder="Email Address" required>
                 <div class="input-group-btn">
-                    <button type="button" class="btn btn-danger">Subscribe</button>
+                    <button type="button" class="btn btn-danger" name="button1" onclick="subscribe(this,document.form1.email)">Subscribe</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-
+</form>
 <div class="col-2 float-left" style="margin: 2em 0em 0em 3em">
     <div class="w3-content w3-display-container float-left">
         <div class="w3-display-container slide">
@@ -77,5 +101,5 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/js/carousel.js"></script>
-
+<script src="assets/js/main.js"></script>
 </html>

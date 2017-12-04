@@ -24,11 +24,7 @@
     </script>
 </header>
 
-<?php
-define("TAX_PERCENT", 0.10);
-define("SHIPPING_THRESHOLD", 0);
-define("SHIPPING_FLAT_AMOUNT", 0);
-?>
+
 
 <body>
 <div class="container">
