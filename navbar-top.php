@@ -37,7 +37,7 @@ if (isset($_SESSION['cart'])) {
             </li>
         </ul>
         <form class="form-inline my-2 my-lg-0" method="get" action="display-product.php">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" name="search">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search Products" name="search">
             <button class="btn btn-primary text-white" type="submit"><span class="fa fa-search"></span></button>
         </form>
     </div>

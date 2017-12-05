@@ -43,7 +43,7 @@ function cartContains($id) {
             class="fa fa-arrow-left"></i></a>
 
 
-<div class="container">
+<div class="container" >
 
     <?php
     global $products;
@@ -70,7 +70,7 @@ function cartContains($id) {
                 <div class="col-60 float-left item-image-slot">
                     <h3 class="item-header">' . $product->itemName . '</h3>
                     <img class="item-image" src="' . $product->imagePath . '"/>
-                    <p style="word-wrap: break-word">' . $product->itemDesc . '</p>
+                    <p style="word-wrap: break-word; margin-bottom: 2em;">' . $product->itemDesc . '</p>
 
                 </div>
 

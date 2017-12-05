@@ -14,6 +14,10 @@ h2 {
     margin-top: 0;
 }
 
+#mainHeader {
+    font-size: 64px;
+}
+
 .moveRight {
     text-align: right;
 }
@@ -132,6 +136,41 @@ h2 {
 }
 
 .add-to-cart {
-	
+
 }
 
+.tech-slideshow {
+    height: 200px;
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+}
+
+.tech-slideshow > div {
+    height: 100px;
+    width: 2526px;
+    background: url(../images/collage.jpg) no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    transform: translate3d(0, 0, 0);
+}
+.tech-slideshow .mover-1 {
+    animation: moveSlideshow 12s linear infinite;
+}
+.tech-slideshow .mover-2 {
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+    background-position: 0 -200px;
+    animation: moveSlideshow 15s linear infinite;
+}
+
+
+@keyframes moveSlideshow {
+    100% {
+        transform: translateX(-66.666%);
+    }
+}

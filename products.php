@@ -31,6 +31,7 @@
 <div class="container">
     <h1 id="categoryHeader">All Categories</h1>
     <div class="list-group">
+        <a href="display-product.php?search=" class="list-group-item"><i class="fa fa-shopping-bag"></i>&nbsp; All</a>
         <a href="display-product.php?category=0" class="list-group-item"><i class="fa fa-camera"></i>&nbsp; Cameras</a>
         <a href="display-product.php?category=1" class="list-group-item"><i class="fa fa-laptop"></i>&nbsp; Computers</a>
         <a href="display-product.php?category=2" class="list-group-item"><i class="fa fa-lg fa-mobile"></i>&nbsp; Phones</a>

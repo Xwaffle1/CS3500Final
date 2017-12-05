@@ -17,37 +17,14 @@
     }
     ?>
     <?php include("navbar-top.php"); ?>
-    <!--    --><?php //include("navbar-left.php"); ?>
 </header>
 <body>
 
-<script>
-
-function subscribe(element,mail){
-	
-	var mailformat = /^\w([\.-]?\w+)*@\w+([\.-]?\w)*(\.\w{2,3})+$/;
-	
-	if(mail.value.match(mailformat))  { 
-	
-	element.classList.add("btn-success");
-	element.classList.remove("btn-danger");
-	element.innerHTML = "Subscribed";
-	document.form1.email.focus();
-	return true;  
-	}  
-	else  {  
-	alert("You have entered an invalid email address!");  
-	document.form1.email.focus();
-	return false;  
-	}
-}
-	
-</script>
 <form name="form1">
 <div class="col-12">
     <div class="container bg-inverse">
         <div class="jumbotron-header text-center">
-            <h1><EBuy></EBuy></h1>
+            <h1 id="mainHeader">EBuy</h1>
             <p style="margin: 1em">Subsribe to our news letter in order to hear about our great deals!</p>
             <div class="input-group">
                 <input type="email" class="form-control" name="email" size="50" placeholder="Email Address" required>
@@ -94,6 +71,10 @@ function subscribe(element,mail){
 
 <?php include("footer.php"); ?>
 
+<div class="tech-slideshow">
+    <div class="mover-1"></div>
+    <div class="mover-2"></div>
+</div>
 
 </body>
 <!-- Bootstrap core JavaScript -->
